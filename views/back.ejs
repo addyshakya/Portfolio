@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/stylesheets/style.css">
+</head>
+<body>
+    <div id="main" class="pattern-bg ">
+    </div>
+
+    <div id="page1">
+      <div id="nav">
+        <a href="/About">About</a>
+    </div>
+        <h1 id="in">INTERACTIVE </h1>
+        <h1 id="fr">FRONT END</h1>
+        <h1 id="de">DEVELOPER</h1>
+    </div>
+    <div id="page2">
+      <h3>Featured Projects</h3>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+      
+        function timelineOne() {
+            var tl = gsap.timeline();
+
+            tl
+          .to("#in", {
+              top:"10%",
+              delay: -.7,
+              duration: 1,
+              display: "initial",
+          })
+          .to("#fr", {
+              top:"32%",
+              delay: -.7,
+              duration: 1,
+              display: "initial",
+          })
+          .to("#de", {
+              top:"55%",
+              delay: -.7,
+              duration: 1,
+              display: "initial",
+          })
+        }
+
+        window.addEventListener('DOMContentLoaded',function(){
+            timelineOne();
+        })
+
+    </script>
+</body>
+</html>
